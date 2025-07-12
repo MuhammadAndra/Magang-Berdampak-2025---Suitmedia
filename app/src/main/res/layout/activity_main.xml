@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.MainActivity">
+
+    <ImageButton
+        android:id="@+id/bt_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/circular_background"
+        android:contentDescription="@string/image_add_contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242"
+        app:srcCompat="@drawable/ic_photo" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/et_background"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="#6867775C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/bt_img"
+        app:layout_constraintStart_toStartOf="@+id/bt_img"
+        app:layout_constraintTop_toBottomOf="@+id/bt_img" />
+
+    <EditText
+        android:id="@+id/etPalindrome"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/et_background"
+        android:ems="10"
+        android:hint="Palindrome"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="#6867775C"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/etName"
+        app:layout_constraintStart_toStartOf="@+id/etName"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+    <Button
+        android:id="@+id/btnCheck"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/bt_background"
+        android:text="CHECK"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/etPalindrome"
+        app:layout_constraintStart_toStartOf="@+id/etPalindrome"
+        app:layout_constraintTop_toBottomOf="@+id/etPalindrome" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="310dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bt_background"
+        android:text="NEXT"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btnCheck"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnCheck"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheck" />
+</androidx.constraintlayout.widget.ConstraintLayout>
